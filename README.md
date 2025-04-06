@@ -23,7 +23,8 @@ InterviewApp
 │   ├── Repositories
 │   └── UseCases
 ├── Data
-│   └── Repositories
+│   ├── DataSources
+│   ├── Repositories
 └── Presentation
     ├── ViewModels
     └── Views
