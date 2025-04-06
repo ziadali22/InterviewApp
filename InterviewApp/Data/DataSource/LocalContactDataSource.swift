@@ -5,8 +5,8 @@
 //  Created by Ziad Khalil on 06/04/2025.
 //
 
-import Foundation
-final class InMemoryContactRepository: ContactRepository {
+
+final class LocalContactDataSource {
     private var contacts: [Contact] = [
         .init(id: "1", firstName: "ziad", lastName: "ali", email: "ziad@gmail.com"),
         .init(id: "2", firstName: "ahmed", lastName: "ali", email: "ahmed@gmail.com"),

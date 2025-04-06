@@ -22,7 +22,8 @@ struct ContactsView: View {
         NavigationStack {
             List(searchResults) { contact in
 
-                NavigationLink(destination: EditContactView(contact: contact).environmentObject(viewModel)) {
+                NavigationLink(destination: EditContactView(contact: contact)
+                    .environmentObject(viewModel)) {
                     ContactsRowView(contacts: contact)
                         .swipeActions {
                             Button {
@@ -35,7 +36,6 @@ struct ContactsView: View {
                         }
                 }
             }
-
             .sheet(isPresented: $showAddContactView) {
                 AddContactsView()
                     .environmentObject(viewModel)

@@ -5,7 +5,7 @@
 //  Created by Ziad Khalil on 03/04/2025.
 //
 
-import Foundation
+
 struct Contact: Identifiable, Hashable {
     let id: String
     var firstName: String

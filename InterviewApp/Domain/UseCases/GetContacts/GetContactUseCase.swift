@@ -5,8 +5,11 @@
 //  Created by Ziad Khalil on 06/04/2025.
 //
 
-import Foundation
-struct GetContactsUseCase {
+protocol GetContactsUseCaseProtocol {
+    func execute() -> [Contact]
+}
+
+struct GetContactsUseCase: GetContactsUseCaseProtocol {
     let repository: ContactRepository
     func execute() -> [Contact] {
         return repository.fetchContacts()
