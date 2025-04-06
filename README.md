@@ -16,6 +16,8 @@ This app follows the Clean Architecture approach by separating responsibilities 
 
 ## 🧱 Folder Structure
 InterviewApp
+<pre lang="bash"><code>
+InterviewApp
 ├── Domain
 │   ├── Entities
 │   ├── Repositories
@@ -23,8 +25,9 @@ InterviewApp
 ├── Data
 │   └── Repositories
 └── Presentation
-├── ViewModels
-└── Views
+    ├── ViewModels
+    └── Views
+</code></pre>
 
 ---
 
